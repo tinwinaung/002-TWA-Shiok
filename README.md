@@ -2,6 +2,8 @@
 
 Shiok is a borrowing from Malay that has acquired multiple uses and meanings in everyday Singapore English. It is an exclamation expressing admiration or approval, just like 'cool!' and 'great!'.
 
+Shiok used opensource ClamAV Engine and Signature to scan specific folder in Web Application Servers.
+
 This software is free to use for any purpose.
 
 ### Signature
@@ -53,7 +55,7 @@ There will have a few seconds delay on full folder scan on Siok restart (If Scan
 
 Shiok allow you to disable build-in update process. In the case when you disable it, please make sure you have proper process to update database.
 
-#4. Log
+# 4. Log
 
 I strongly advise you to audit Shiok.log file and make sure you read Fatal messages.
 Currently, there is option to disable log options. (You need to know what is happening ... Right?)
