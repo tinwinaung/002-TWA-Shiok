@@ -2,9 +2,13 @@
 
 Shiok is a borrowing from Malay that has acquired multiple uses and meanings in everyday Singapore English. It is an exclamation expressing admiration or approval, just like 'cool!' and 'great!'.
 
-Shiok used opensource ClamAV Engine and Signature to scan specific folder in Web Application Servers.
+Shiok used opensource ClamAV Engine and Signature to scan specific folder in Web Application Servers (in realtime).
 
 This software is free to use for any purpose.
+
+## Why?
+
+OpenSource virus scann engine are not available out of the box for realtime scanning in Windows. Here it is!
 
 ### Signature
 
