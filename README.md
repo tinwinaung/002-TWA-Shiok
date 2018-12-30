@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+## Shiok
 
-You can use the [editor on GitHub](https://github.com/tinwinaung/shiok/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Shiok is a borrowing from Malay that has acquired multiple uses and meanings in everyday Singapore English. It is an exclamation expressing admiration or approval, just like 'cool!' and 'great!'.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This software is free to use for any purpose.
 
-### Markdown
+### Signature
+Shiok (v0.5.6)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Release Date	: 31 Dec 2018
 
-```markdown
-Syntax highlighted code block
+Author			  : TIN WIN AUNG
 
-# Header 1
-## Header 2
-### Header 3
+Copyright	  	: Copyright (C) 2018 TIN WINAUNG
 
-- Bulleted
-- List
+Contact		  	: tinwinaung@sayargyi.com
 
-1. Numbered
-2. List
+#1. Manual
 
-**Bold** and _Italic_ and `Code` text
+##1.1. Installation
 
-[Link](url) and ![Image](src)
-```
+Shiok install windows service call Shiok (Service Name: Shiok, Display Name: Shiok Antivirus).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Shiok include the following utilities (You can find in Windows Start Menu):
 
-### Jekyll Themes
+###1.1.1. Shiok Controller
+###1.1.2. Shiok Service Configuration file
+###1.1.3. Folder Watcher list Configuration file
+###1.1.4. Uninstaler
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tinwinaung/shiok/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+##1.2. Configuration
 
-### Support or Contact
+You can find configuration file in Start Menu (or) <Install Folder>\etc\ path.
+The most important configuration is ShiokWatchFolders.txt where you can put all folders that you want to scan in realtiom. Please take note that you need to put full folder path (One path in a line each).
+If you know well on ClamAV setting, you may play around with it under installed directory.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+###1.2.1. Shiok.txt 
+
+It is used for advantage users. The most useful configurations will be proxy server for virus signature updates and email notifications.
+You will also have option to scan folder everytime you start the service or disable it. Another important option is to allow virus scanning engine to use multi scan mode. If your processor is not powerful enough, it it better to disable it.
+
+##1.3. Uninstallation
+
+You can just run uninstal program that you can find in start menu or installed folder. Please take note that we will not delete logs and configuration files. Uninstaller will open folder for you to delete manually if you want to.
+
+#2. Service
+
+Shiok will start monitor the folder list when the service is started. However, full scanning of folder will wait until full virus signature database is download for the first time if you enable ScanFolderWhenStart option.
+There will have a few seconds delay on full folder scan on Siok restart (If ScanFolderWhenStart is enabled) because Virus Engine to start first before scanning is started.
+
+#3. Virus Signature Database Update
+
+Shiok allow you to disable build-in update process. In the case when you disable it, please make sure you have proper process to update database.
+
+#4. Log
+
+I strongly advise you to audit Shiok.log file and make sure you read Fatal messages.
+Currently, there is option to disable log options. (You need to know what is happening ... Right?)
+
+
