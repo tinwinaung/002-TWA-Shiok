@@ -7,7 +7,7 @@ Meaning : Shiok is a borrowing from Malay that has acquired multiple uses and me
 
 ### Description
 
-Shiok is a packag of windows service and related tools to scan specific folders and scan file in real-time by using open-source AntiVirus Engine and Virus Signature Database.
+Shiok is a package of windows service and related tools to scan specific folders and scan file in real-time by using open-source AntiVirus Engine and Virus Signature Database.
 
 Shiok used Open-source [ClamAV](https://en.wikipedia.org/wiki/Clam_AntiVirus) AntiVirus Engine and Virus Signature Database. [ClamAV-Source](https://github.com/Cisco-Talos/clamav-devel)
 
