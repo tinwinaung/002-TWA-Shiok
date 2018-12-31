@@ -1,3 +1,4 @@
+
 ![Banner](https://lh4.googleusercontent.com/ygia442vI8COj0_bzhnYQwPPD-xjRFH7g6l92H6SPP1BR9xjwQhvg7yvj0Jt-8mrwpV7exI2hb6ibzdKywuc=w3840-h1594)
 
 ## Shiok
@@ -19,20 +20,20 @@ Shiok used Open-source [ClamAV](https://en.wikipedia.org/wiki/Clam_AntiVirus) An
 1. Windows Service
 2. Various configurations options for the Service
 3. Multi threaded files/folders monitoring and scanning in real-time
--- If you are changing multiple files/folders in short time, threads will be managed
--- This can not be disabled
+    * If you are changing multiple files/folders in short time, threads will be managed
+    * This can not be disabled
 4. Multi scan will use all available CPU threads to scan files under folders.
--- This can be disabled in **etc\shiok.txt** file if you have less CPU cores
+    * This can be disabled in **etc\shiok.txt** file if you have less CPU cores
 5. Email notification on Virus Found Events (With SMTP Server)
 6. Proxy Server if you are behind firewall
 7. Enable or Disable scan all file under watch folder when service is started
-8. Drop-in* ClamAV update and configuration
---* You can just download and replace ClamAV directly into Program Folder
--- You can configure additional ClamAV options in ***.conf.ref** files
+8. Drop-in ClamAV update and configuration
+    * You can just download and replace ClamAV directly into Program Folder
+    * You can configure additional ClamAV options in ***.conf.ref** files
 8. Scheduler^ for Virus Signature Database update
--- ^ You can disable it so that you can do your own updates. 
--- However, Shiok have an implementation to wait for scanning while database is updating. 
--- You will not able to use this feature if you use your own scheduler.
+    * ^ You can disable it so that you can do your own updates. 
+    * However, Shiok have an implementation to wait for scanning while database is updating. 
+    * You will not able to use this feature if you use your own scheduler.
 
 #### Signature
 
@@ -60,9 +61,9 @@ You can use this command shell to
 1. Run Custom Scan
 2. Run Manual Update
 3. Control Service
--- Check Service Status
--- Add/Remove Service
--- Stop/Start Service
+    * Check Service Status
+    * Add/Remove Service
+    * Stop/Start Service
 
 Please take note that this shell require elevated administrator privilege. Use Run As Administrator feature in Windows. Otherwise, the shall will request for it and re-launch itself.
 
