@@ -94,7 +94,7 @@ Shiok allow you to disable build-in update process. If you disable it, please ma
 ## Log
 
 I strongly advise you to audit Shiok.log file and make sure you read Fatal messages.
-Currently, there is option to disable log options. (You need to know what is happening ... Right?)
+Currently, there is no option to disable log. (You need to know what is happening ... Right?)
 
 ### ToDo
 The followings will be updated. However, they are not directly related to Shiok Virus monitoring and Scanning.
