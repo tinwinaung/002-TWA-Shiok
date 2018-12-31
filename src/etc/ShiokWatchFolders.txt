@@ -1,0 +1,12 @@
+﻿# /* Copyright (C) TIN WIN AUNG - All Rights Reserved
+# * Unauthorized copying of this file, via any medium is strictly prohibited
+# * Proprietary and confidential
+# * Written by TIN WIN AUNG <tinwinaung@sayargyi.com>, Dec 2018
+# */
+
+# Please use full path of each folder in each line
+# Invalid (or) not exist folder will be skip
+# - Find folders that are not able to find in the Shiok Folder
+
+C:\Users
+C:\Program Files

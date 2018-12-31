@@ -1,0 +1,125 @@
+﻿# /* Copyright (C) TIN WIN AUNG - All Rights Reserved
+# * Unauthorized copying of this file, via any medium is strictly prohibited
+# * Proprietary and confidential
+# * Written by TIN WIN AUNG <tinwinaung@sayargyi.com>, Dec 2018
+# */
+
+# This is configuration file for Shiok
+# Config lines are key value pair 
+# You can use hash char to make comment lines (or) behind each key value pair
+
+# Full file path to Clamd program
+# Default is blank so that Shiok will use embedded Clamd
+ClamdBinFilePath =
+
+# Full file path to ClamdConfig file
+# Default is blank so that Shiok will use embedded ClamdConfig
+# Please take note that the following options will not be use for Clamd
+# 1. Log
+# 2. Proxy
+# In general, please refer to custom clamd config file if you define one here
+ClamdConfigFilePath =
+
+# Default is blank so that Shiok will use its own Args
+# - Please take note that Shiok will not use any other additional Args if you define here
+ClamdArg =
+
+# Clamd Log file
+# Default is blank
+# If this value is blank, default file will be <program folder>\log\clamd.log
+ClamdLogFilePath =
+
+# Full file path to FreshClam program
+# Default is blank so that Shiok will use embedded FreshClam
+FreshClamBinFilePath =
+
+# Default is false. (only "true" or 1 will enable this option.)
+FreshClamEnable = true
+
+# Full file path to FreshClamConfig file
+# Default is blank so that Shiok will use embedded FreshClamConfig
+# Please take note that the following options will not be use for Clamd
+# 1. Log
+# 2. Proxy
+# In general, please refer to custom FreshClam config file if you define one here
+FreshClamConfigFilePath =
+
+# Default is blank so that Shiok will use its own Args
+# - Please take note that Shiok will not use any other additional Args if you define here
+FreshClamArg =
+
+# FreshClam Log file
+# Default is blank
+# If this value is blank, default file will be <program folder>\log\freshclam.log
+FreshclamLogFilePath =
+
+# Full file path to ClamdScan program
+# Default is blank so that Shiok will use embedded ClamdScan
+ClamdScanBinFilePath =
+
+# Default is blank so that Shiok will use its own Args
+# - Please take note that Shiok will not use any other additional Args if you define here
+ClamdScanArg =
+
+# To scan the directory contents in parallel using available threads.
+# This option is especially useful on multiprocessor and multi-core systems.
+# Default is false. (only "true" or 1 will enable this option.)
+ClamdScanMT = true
+
+# ClamdScan Log file
+# Default is blank
+# If this value is blank, default file will be <program folder>\log\clamdscan.log
+ClamdScanLogFilePath =
+
+# Define whether you want to move virus file to specific location
+# This option will use together with VirusJailFolder option
+# Default is false. (only "true" or 1 will enable this option.)
+MoveVirusFile = true
+
+# Virus will move to this folder
+# Default is blank
+# If this value is blank, default folder will be <program folder>\virus
+VirusJailFolder =
+
+# Please configure update time from 0 - 24 (Integers)
+# default is blank and default update time is 3AM
+# Any wrong entry here will fall back to 3AM
+AVdbUpdateTime = 3
+
+# Proxy configurations if you want to use web proxy for virus signature updates
+ProxyServer =
+ProxyPort =
+ProxyUser =
+ProxyPwd =
+
+# If you configure true for this open, Shiok will scan all the folders defined in WatchFolders.txt
+# Default is false. (only "true" or 1 will enable this option.)
+ScanFolderWhenStart = true
+
+
+# Shiok have build-in email system
+# Default is false. (only "true" or 1 will enable this option.)
+EnableEmailNoti = false
+SMTPServer = 127.0.0.1
+SMTPPort = 25
+SMTPUser =
+SMTPPwd = 
+# Default is false. (only "true" or 1 will enable this option.)
+SMTPEnableSsl = false
+From =
+# Please use email list by comma (,)
+To =  
+# {{EVENT}} will be Scan result. Virus Found (or) Scan Error
+# if you dont include {{EVENT}} in the following value,
+# You will not get event info in the subject
+Subject = New Virus Event : {{EVENT}}
+# {{MSG}} will be details info in new line
+# if you dont include {{MSG}} in the following value,
+# You will not get details info
+Body = {{MSG}}
+
+
+
+# Note
+# embedded means the package included with Shiok installer
+# Version in this installation is 0.101.0	
