@@ -35,18 +35,13 @@ Shiok used Open-source [ClamAV](https://en.wikipedia.org/wiki/Clam_AntiVirus) An
     * However, Shiok have an implementation to wait for scanning while database is updating. 
     * You will not able to use this feature if you use your own scheduler.
 
-#### Signature
+## Signature
 
-Shiok (v0.5.6)
-
-Release Date	: 1 Jan 2019
-
-Author		: TIN WIN AUNG
-
-Copyright	: Copyright (C) 2019 TIN WINAUNG
-
-Contact		: tinwinaung@sayargyi.com
-
+* Shiok (v0.5.6)
+* Release Date	: 1 Jan 2019
+* Author		: TIN WIN AUNG
+* Copyright	: Copyright (C) 2019 TIN WINAUNG
+* Contact		: tinwinaung@sayargyi.com
 
 ## Manual
 
