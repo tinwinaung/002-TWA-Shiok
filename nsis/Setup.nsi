@@ -90,10 +90,6 @@ Section "MainSection" SEC01
   File "..\src\bin\Release\etc\ShiokWatchFolders.txt" 
   File "..\src\bin\Release\etc\Application.txt"
   SetOutPath "$INSTDIR" 
-  ;CreateDirectory "$STARTMENU\${PRODUCT_NAME}"
-  ;CreateShortCut "$STARTMENU\${PRODUCT_NAME}\Shiok.lnk" "$INSTDIR\Shiok.bat"
-  ;Run 
-
 SectionEnd
 
 Section -AdditionalIcons
@@ -108,7 +104,6 @@ Section -AdditionalIcons
   CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\Open Log Folder.lnk" "$INSTDIR\log"
   CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\Open Config Folder.lnk" "$INSTDIR\etc"
   CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\Open Virus Folder.lnk" "$INSTDIR\Virus"
-
 SectionEnd
 
 Section -Post
@@ -178,6 +173,11 @@ Section Uninstall
 	Delete "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME} Control.lnk"
   Delete "$SMPROGRAMS\${PRODUCT_NAME}\Website.lnk"
   Delete "$SMPROGRAMS\${PRODUCT_NAME}\Uninstall.lnk"
+  Delete "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME} Config.lnk"
+  Delete "$SMPROGRAMS\${PRODUCT_NAME}\Watch Folder Config.lnk"
+  Delete "$SMPROGRAMS\${PRODUCT_NAME}\Open Log Folder.lnk"
+  Delete "$SMPROGRAMS\${PRODUCT_NAME}\Open Config Folder.lnk"
+  Delete "$SMPROGRAMS\${PRODUCT_NAME}\Open Virus Folder.lnk"
 	; Try to remove the Start Menu folder - this will only happen if it is empty
 	RMDir "$SMPROGRAMS\${PRODUCT_NAME}"
 
