@@ -38,10 +38,15 @@ Shiok used Open-source [ClamAV](https://en.wikipedia.org/wiki/Clam_AntiVirus) An
 #### Signature
 
 Shiok (v0.5.6)
+
 Release Date	: 1 Jan 2019
+
 Author		: TIN WIN AUNG
+
 Copyright	: Copyright (C) 2019 TIN WINAUNG
+
 Contact		: tinwinaung@sayargyi.com
+
 
 ## Manual
 
