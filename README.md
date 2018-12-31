@@ -9,6 +9,10 @@ Shiok is a packag of windows service and related tools to scan specific folders 
 
 Shiok used Open-source [ClamAV](https://en.wikipedia.org/wiki/Clam_AntiVirus) AntiVirus Engine and Virus Signature Database. [ClamAV-Source](https://github.com/Cisco-Talos/clamav-devel)
 
+### Download
+
+[Releases](https://github.com/tinwinaung/shiok/releases)
+
 ### Features
 
 1. Windows Service
