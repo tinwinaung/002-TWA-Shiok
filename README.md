@@ -70,14 +70,12 @@ Please take note that this shell require elevated administrator privilege. Use R
 ### Configurations
 #### etc\ShiokWatchFolders.txt
 
-Configuration have comments for your reference.
 You can find configuration file in Start Menu (or) <Install Folder>\etc\ path.
 The most important configuration is ShiokWatchFolders.txt where you can put all folders that you want to scan in real-time. Please take note that you need to put full folder path (One path in a line each).
 If Shiok can not find the folder path, it will log under **etc\Shiok.log**
 
 #### etc\Shiok.txt 
 
-Configuration have comments for your reference.
 This file contain configurations for Shiok service. Details of each configuration option can be found inside the file.
 
 ### Uninstallation
